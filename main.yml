@@ -6,3 +6,4 @@
   roles:
     - role: windows-pending-reboot
     - role: windows-disk-status
+    - role: windows_update
