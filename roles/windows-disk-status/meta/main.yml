@@ -1,0 +1,14 @@
+---
+galaxy_info:
+  author: Lucas Juarez
+  description: Role for checking disk space on Windows Server
+  license: MIT
+
+  min_ansible_version: 2.4
+  platforms:
+    - name: Windows
+      versions:
+        - all
+
+  galaxy_tags:
+    - windows

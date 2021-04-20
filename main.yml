@@ -1,0 +1,8 @@
+- hosts: windows
+  vars:
+    windows_reboot_allowed: true
+    windows_pending_reboot_fail: true
+
+  roles:
+    - role: windows-pending-reboot
+    - role: windows-disk-status

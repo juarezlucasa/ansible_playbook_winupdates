@@ -1,0 +1,14 @@
+---
+- name: check free space on disk
+  win_shell: "{{ lookup('file', 'check_disk_freespace.ps1') }}"
+  register: insufficient_disk_space
+  changed_when: insufficient_disk_space.stdout_lines[0]|float is lt 10
+
+- name: fail when disk has not enough space
+  fail:
+    msg: "playbook for {{ inventory_hostname }} failed because C Drive has no enough space to install KBs"
+  when:
+    - insufficient_disk_space.stdout_lines[0]|float is lt 10
+
+- name: run all notified handlers
+  meta: flush_handlers
