@@ -1,7 +1,7 @@
 # file: group_vars/windows.yml
 
 ansible_user: lucas
-ansible_password: Welcome1#
+ansible_password: Encriptada
 ansible_connection: winrm
 ansible_port: 5986
 # The following is necessary for Python 2.7.9+ when using default WinRM self-signed certificates:
