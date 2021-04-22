@@ -1,8 +1,8 @@
 # file: group_vars/windows.yml
 
-ansible_user: lucas
-ansible_password: Encriptad
+ansible_user: rivadullac@bue299.comafi.com.ar
+ansible_password: Homero2023
+ansible_port: 5985  #We use HTTP Listener. We can use also 5986 for HTTPS
 ansible_connection: winrm
-ansible_port: 5986
-# The following is necessary for Python 2.7.9+ when using default WinRM self-signed certificates:
+ansible_winrm_transport: ntlm
 ansible_winrm_server_cert_validation: ignore
