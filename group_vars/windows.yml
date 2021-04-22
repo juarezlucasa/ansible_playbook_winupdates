@@ -1,7 +1,7 @@
 # file: group_vars/windows.yml
 
-ansible_user: rivadullac@bue299.comafi.com.ar
-ansible_password: Homero2023
+ansible_user: test
+ansible_password: test
 ansible_port: 5985  #We use HTTP Listener. We can use also 5986 for HTTPS
 ansible_connection: winrm
 ansible_winrm_transport: ntlm
